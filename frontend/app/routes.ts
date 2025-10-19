@@ -22,10 +22,10 @@ export default [
       "workspaces/:workspaceId",
       "routes/dashboard/workspaces/workspace-details.tsx"
     ),
-    // route(
-    //   "workspaces/:workspaceId/projects/:projectId",
-    //   "routes/dashboard/project/project-details.tsx"
-    // ),
+    route(
+      "workspaces/:workspaceId/projects/:projectId",
+      "routes/dashboard/project/project-details.tsx"
+    ),
     // route(
     //   "workspaces/:workspaceId/projects/:projectId/tasks/:taskId",
     //   "routes/dashboard/task/task-details.tsx"
@@ -39,7 +39,7 @@ export default [
     "routes/dashboard/workspaces/workspace-invite.tsx"
   ),
 
-  // layout("routes/user/user-layout.tsx", [
-  //   route("user/profile", "routes/user/profile.tsx"),
-  // ]),
+  layout("routes/user/user-layout.tsx", [
+    route("user/profile", "routes/user/profile.tsx"),
+  ]),
 ] satisfies RouteConfig;
